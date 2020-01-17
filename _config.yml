@@ -1,4 +1,4 @@
-title: Minjae Cho's Blog
+title: Min J Bio
 author: Minjae Cho
 email: ussr1285@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -16,7 +16,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Minjae Cho
-  tagline: Student Of Ajou Univercity & Sunrin Internet High School
+  tagline: Student
   date_format: "%b %-d, %Y"
   style: black
   showNav: false
@@ -24,9 +24,11 @@ texture:
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+  #  twitter: 
+    github:  ussr1285
+    facebook: 
+    instagram: 
+  #  linkedIn: in/
     rss: rss
  
 
