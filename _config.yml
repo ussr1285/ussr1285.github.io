@@ -21,13 +21,15 @@ texture:
   style: black
   showNav: false
   showPicker: false
+  disqus_shortname: games # 잠시만
+  analytics_id : '113361760' # 구글 애널리틱스
 
   # generate social links in footer
   social_links:
   #  twitter: 
     github:  ussr1285
-    facebook: 
-    instagram: 
+    facebook: MinjaeFace
+    instagram: mininstar5313
   #  linkedIn: in/
     rss: rss
  
