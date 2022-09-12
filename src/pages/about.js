@@ -5,7 +5,7 @@ import Seo from '../components/seo'
 const AboutPage = () => {
     return (
         <Layout pageTitle="About Me">
-            <p>제가 보려고 만든, 잡다한 것 올리고 정리하는 사이트입니다.</p>
+            <p>안녕하세요.</p>
         </Layout>
     )
 }
