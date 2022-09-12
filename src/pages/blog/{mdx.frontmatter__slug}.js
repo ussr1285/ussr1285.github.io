@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
-import Video from "../components/video"
+import Video from "../../components/video"
 
 
 const BlogPost = ({ data, children }) => {
@@ -11,10 +11,10 @@ const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
-      {/*<GatsbyImage
+      {<GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
-      />*/}
+      />}
       <Video
         videoSrcURL={data.mdx.frontmatter.videoSrcURL}
         videoTitle={data.mdx.frontmatter.videoTitle}
