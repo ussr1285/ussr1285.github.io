@@ -14,7 +14,19 @@ module.exports = {
       },
     },
     "gatsby-plugin-mdx",
-    "gatsby-transformer-sharp"
+    {
+      resolve: "gatsby-transformer-sharp",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 500, // 참고: It's important to specify the maxWidth (in pixels) of the content container as this plugin uses this as the base for generating different widths of each image.
+            },
+          }
+        ]
+      },
+    },
   ],
 }
 
