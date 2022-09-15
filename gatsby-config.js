@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Minjae Joe`,
+    title: `Minjae's Blog`,
     siteUrl: `https://ussr1285.github.io`,
   },
   plugins: [
@@ -20,7 +20,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 500, // 참고: It's important to specify the maxWidth (in pixels) of the content container as this plugin uses this as the base for generating different widths of each image.
+              maxWidth: 500, // It's important to specify the maxWidth (in pixels) of the content container as this plugin uses this as the base for generating different widths of each image.
             },
           }
         ]
