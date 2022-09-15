@@ -2,17 +2,17 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { 
-    navLinkItem,
-  } from '../components/layout.module.css'
+    navLinkText,
+} from './layout.module.css'
   
 
 const AboutPage = () => {
     return (
         <Layout pageTitle="About Me">
             <p>안녕하세요.</p>
-            <p>Github:
-                <a href="https://github.com/ussr1285" className={navLinkItem}>
-                    My Github Profile
+            <p>My Github Profile:
+                <a href="https://github.com/ussr1285" className={navLinkText}>
+                   logo
                 </a>
             </p>
         </Layout>
