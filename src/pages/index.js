@@ -2,7 +2,6 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { 
-  navLinks,
   navLinkItem,
   navLinkText
 } from '../components/layout.module.css'
@@ -13,7 +12,7 @@ const IndexPage = () => {
       <Layout pageTitle="Joe's Blog">
         <p>제가 보려고 만든, 잡다한 것 올리고 정리하는 사이트입니다.</p>
         
-        <ul className={navLinks}>
+        <ul>
           <li className={navLinkItem}>
             <a href="https://ussr1285.github.io/odds-ends/story_keyword_card24.html" className={navLinkText}>
               오쓰카 에이지(<ruby>大塚<rt>おおつか</rt> 英志<rt>えいじ</rt></ruby>)의 스토리 키워드 카드
