@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
+import navLinkItem from './index.module.css'
 
 const BlogPage = ({ data }) => {
     return (
@@ -10,7 +11,7 @@ const BlogPage = ({ data }) => {
                 {
                     data.allMdx.nodes.map((node) => (
                         <article key={node.id}>
-                            <h2>
+                            <h2 className={navLinkItem}>
                               <Link to={`/blog/${node.frontmatter.slug}`}>
                                 {node.frontmatter.title}
                               </Link>
