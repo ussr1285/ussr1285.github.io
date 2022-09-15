@@ -5,7 +5,7 @@ import {
   navLinks,
   navLinkItem,
   navLinkText
-} from './layout.module.css'
+} from '../components/layout.module.css'
 
 const IndexPage = () => {
   return (

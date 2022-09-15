@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { 
     navLinkText,
-} from './layout.module.css'
+} from '../components/layout.module.css'
   
 
 const AboutPage = () => {
