@@ -1,12 +1,16 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
+import { MDXProvider  } from "@mdx-js/react"
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
+import Video from '../../components/video'
+
+const shortcodes = { Video }
 
 const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      {children}
+      <MDXProvider components={shortcodes}>{children}</MDXProvider>
     </Layout>
   )
 }
