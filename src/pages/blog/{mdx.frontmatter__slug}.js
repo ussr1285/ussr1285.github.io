@@ -4,8 +4,9 @@ import { MDXProvider  } from "@mdx-js/react"
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import Video from '../../components/video'
+import ExternalLink from '../../components/externalLink'
 
-const shortcodes = { Video }
+const shortcodes = { Video, ExternalLink }
 
 const BlogPost = ({ data, children }) => {
   return (
