@@ -22,6 +22,7 @@
     "gatsby-plugin-mdx": "^4.1.1",
     "gatsby-plugin-sharp": "^4.22.0",
     "gatsby-remark-images": "^6.23.0",
+    "gatsby-remark-responsive-iframe": "^5.23.0",
     "gatsby-source-filesystem": "^4.22.0",
     "gatsby-transformer-sharp": "^4.22.0",
     "react": "^18.1.0",
