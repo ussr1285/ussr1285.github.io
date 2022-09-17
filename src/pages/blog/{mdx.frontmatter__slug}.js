@@ -23,7 +23,7 @@ query($id: String) {
     mdx(id: {eq: $id}) {
       frontmatter {
         title
-        date(formatString: "YYYY.MM.DD HH:mm")
+        date(formatString: "YYYY.MM.DD")
       }
     }
   }
