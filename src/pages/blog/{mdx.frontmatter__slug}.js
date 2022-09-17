@@ -11,7 +11,9 @@ const shortcodes = { Video, ExternalLink }
 const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <MDXProvider components={shortcodes}>{children}</MDXProvider>
+      <MDXProvider components={shortcodes}>
+        {children}
+      </MDXProvider>
     </Layout>
   )
 }
@@ -21,7 +23,7 @@ query($id: String) {
     mdx(id: {eq: $id}) {
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY.MM.DD HH:mm")
       }
     }
   }
