@@ -3,7 +3,7 @@
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
   }
-  .video-wrapper iframe {
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
