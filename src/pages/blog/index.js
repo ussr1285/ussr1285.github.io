@@ -5,6 +5,9 @@ import Seo from '../../components/seo'
 import { 
   navLinkText
 } from '../../components/layout.module.css'
+import {
+  articleStyle
+} from './index.module.css'
 
 const BlogPage = ({ data }) => {
     return (
@@ -12,7 +15,7 @@ const BlogPage = ({ data }) => {
             <ul>
                 {
                     data.allMdx.nodes.map((node) => (
-                        <article key={node.id}>
+                        <article className={articleStyle} key={node.id}>
                             <h2>
                               <Link to={`/blog/${node.frontmatter.slug}`} className={navLinkText}>
                                 {node.frontmatter.title}
@@ -27,6 +30,7 @@ const BlogPage = ({ data }) => {
         </Layout>
     )
 }
+
 
 export const query = graphql`
   query {

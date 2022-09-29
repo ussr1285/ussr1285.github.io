@@ -24,8 +24,14 @@
 }
 
 .site-title {
+    background: black;
     font-size: 3rem;
-    color: gray;
     font-weight: 700;
     margin: 3rem 0;
+    padding: 1rem 0;
+}
+
+.site-title .nav-link-text {
+    color: white;
+    padding: 1rem;
 }
