@@ -21,6 +21,8 @@
 
 .site-header {
     background: #24292f;
+    margin: 3rem 0;
+    padding: 1rem 0;
 }
 
 .site-header .link-text {
@@ -28,11 +30,10 @@
     padding: 1rem;
 }
 
-.site-header > .link-text {
+.site-title {
     font-size: 3rem;
     font-weight: 700;
-    margin: 3rem 0;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .page-heading {

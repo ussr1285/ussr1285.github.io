@@ -6,6 +6,7 @@ import {
     navLinkItem,
     linkText,
     siteHeader,
+    siteTitle,
     pageHeading
 } from './layout.module.css'
 
@@ -24,7 +25,7 @@ const Layout = ({pageTitle, children}) => {
         <div className={container}>
             <header className={siteHeader}>
                 <Link to="/" className={linkText}>
-                    {data.site.siteMetadata.title}
+                    <span className={siteTitle}>{data.site.siteMetadata.title}</span>
                 </Link>
             <nav>
                 <ul className={navLinks}>
