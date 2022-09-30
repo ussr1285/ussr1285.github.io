@@ -2,7 +2,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { 
-    navLinkText,
+    linkText,
 } from '../components/layout.module.css'
   
 
@@ -11,7 +11,7 @@ const AboutPage = () => {
         <Layout pageTitle="About Me">
             <p>안녕하세요.</p>
             <p>My Github Profile: 
-                <a href="https://github.com/ussr1285" className={navLinkText}>
+                <a href="https://github.com/ussr1285" className={linkText}>
                     https://github.com/ussr1285
                 </a>
             </p>

@@ -4,8 +4,9 @@
     font-family: sans-serif;
 }
 
-.heading {
-    color: black;
+.link-text {
+    color: #24292f;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -18,20 +19,22 @@
     padding-right: 2rem;
 }
 
-.nav-link-text {
-    color: black;
-    text-decoration: none;
+.stie-header {
+    background: #24292f;
 }
 
-.site-title {
-    background: black;
+.site-header .link-text {
+    color: white;
+    padding: 1rem;
+}
+
+.site-header > .link-text {
     font-size: 3rem;
     font-weight: 700;
     margin: 3rem 0;
     padding: 1rem 0;
 }
 
-.site-title .nav-link-text {
-    color: white;
-    padding: 1rem;
+.page-heading {
+    color: #24292f;
 }

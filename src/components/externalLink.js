@@ -1,10 +1,10 @@
 import React from "react"
 import { 
-    navLinkText
+    linkText
 } from './layout.module.css'
 
 const ExternalLink = ({ URL, children }) => (
-    <a href={URL} className={navLinkText}>
+    <a href={URL} className={linkText}>
         {children}
     </a>
     

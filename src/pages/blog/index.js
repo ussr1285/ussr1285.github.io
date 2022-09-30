@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import { 
-  navLinkText
+  linkText
 } from '../../components/layout.module.css'
 import {
   articleStyle
@@ -17,7 +17,7 @@ const BlogPage = ({ data }) => {
                     data.allMdx.nodes.map((node) => (
                         <article className={articleStyle} key={node.id}>
                             <h2>
-                              <Link to={`/blog/${node.frontmatter.slug}`} className={navLinkText}>
+                              <Link to={`/blog/${node.frontmatter.slug}`} className={linkText}>
                                 {node.frontmatter.title}
                               </Link>
                             </h2>
