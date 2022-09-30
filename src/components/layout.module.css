@@ -22,18 +22,16 @@
 .site-header {
     background: #24292f;
     margin: 3rem 0;
-    padding: 1rem 0;
+    padding: 1rem 0 0.1rem 1rem;
 }
 
 .site-header .link-text {
     color: white;
-    padding: 1rem;
 }
 
 .site-title {
     font-size: 3rem;
     font-weight: 700;
-    padding: 1rem;
 }
 
 .page-heading {
