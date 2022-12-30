@@ -77,3 +77,6 @@ package-lock.json
 !themes/gatsby-starter-theme-workspace/package-lock.json
 
 .parcel-cache
+
+# 블로그 포스팅할 때 커밋이 되지 않도록 .mdx 파일 제외를 추가하였습니다.
+.mdx
