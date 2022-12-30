@@ -78,5 +78,5 @@ package-lock.json
 
 .parcel-cache
 
-# 블로그 포스팅할 때 커밋이 되지 않도록 .mdx 파일 제외를 추가하였습니다.
-*.mdx
+# 블로그 포스팅할 때 커밋이 되지 않도록, blog 폴더 내의 파일들을 제외했습니다.
+blog/*
