@@ -1,14 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap');
 .container {
     margin: auto;
     max-width: 1280px;
     min-width: 650px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .link-text {
@@ -30,6 +25,7 @@ body {
     background: #24292f;
     margin: 3rem 0;
     padding: 1rem 0 0.1rem 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .site-header .link-text {
