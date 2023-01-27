@@ -26,9 +26,9 @@ const codeStyles = {
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
+      <h1 style={headingStyles}>404 Page not found</h1>
       <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
+        죄송해요 😔, 해당 페이지를 찾을 수 없어요.
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
@@ -38,7 +38,7 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">홈으로 돌아가기</Link>.
       </p>
     </main>
   )

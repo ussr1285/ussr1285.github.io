@@ -40,3 +40,7 @@
 .page-heading {
     color: #24292f;
 }
+
+.articleStyle{
+    border-bottom: 1px solid grey;
+  }
