@@ -44,6 +44,11 @@ const Layout = ({ pageTitle, children }) => {
                                 Github
                             </a>
                         </li>
+                        <li className={navLinkItem}>
+                            <a href="/guestbook" className={linkText}>
+                                Guestbook
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>

@@ -5,6 +5,7 @@ import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import Video from '../../components/video'
 import ExternalLink from '../../components/externalLink'
+import Utteranc from '../../components/comments'
 
 const shortcodes = { Video, ExternalLink }
 
@@ -13,7 +14,9 @@ const BlogPost = ({ data, children }) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <MDXProvider components={shortcodes}>
         {children}
+        <Utteranc/>
       </MDXProvider>
+     
     </Layout>
   )
 }
