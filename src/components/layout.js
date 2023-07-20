@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
     container,
@@ -21,6 +21,28 @@ const Layout = ({ pageTitle, children }) => {
         }
     `)
 
+    const makeNavs = () => {
+        const navLinkLists = [
+            ["/", "Main"],
+            ["/about", "About"],
+            ["https://github.com/ussr1285", "Github"],
+            ["/guestbook", "Guestbook"],
+            ["/googlingTimeLine", "My Googling"],
+        ]
+        let navs = []
+        navLinkLists.map((navInfo) => {
+            navs = [
+                ...navs,
+                <li className={navLinkItem}>
+                    <Link to={navInfo[0]} className={linkText}>
+                        {navInfo[1]}
+                    </Link>
+                </li>
+            ]
+        })
+        return navs
+    }
+
     return (
         <div className={container}>
             <header className={siteHeader}>
@@ -29,26 +51,7 @@ const Layout = ({ pageTitle, children }) => {
                 </Link>
                 <nav>
                     <ul className={navLinks}>
-                        <li className={navLinkItem}>
-                            <Link to="/" className={linkText}>
-                                Main
-                            </Link>
-                        </li>
-                        <li className={navLinkItem}>
-                            <Link to="/about" className={linkText}>
-                                About
-                            </Link>
-                        </li>
-                        <li className={navLinkItem}>
-                            <a href="https://github.com/ussr1285" className={linkText}>
-                                Github
-                            </a>
-                        </li>
-                        <li className={navLinkItem}>
-                            <a href="/guestbook" className={linkText}>
-                                Guestbook
-                            </a>
-                        </li>
+                        {makeNavs()}
                     </ul>
                 </nav>
             </header>

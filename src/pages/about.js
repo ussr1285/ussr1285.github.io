@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import {
@@ -20,6 +20,11 @@ const AboutPage = () => {
                     </a>
                 </li>
                 <li className={navLinkItem}>
+                    <a href="https://pedia.watcha.com/ko-KR/users/8nPvyQjmdDvYo" className={linkText}>
+                        왓챠피디아
+                    </a>
+                </li>
+                <li className={navLinkItem}>
                     <a href="https://ussr1285.github.io/odds-ends/story_keyword_card24.html" className={linkText}>
                         오쓰카 에이지(<ruby>大塚<rt>おおつか</rt> 英志<rt>えいじ</rt></ruby>)의 스토리 키워드 카드
                     </a>
@@ -29,17 +34,12 @@ const AboutPage = () => {
                 </li>
                 <li className={navLinkItem}>
                     <a href="https://ussr1285.github.io/HTML_CSS_Design_and_Build_Websites_by_Jon_Duckett_Total_Example_Code/" className={linkText}>
-                        HTML and CSS: Design and Build Websites by Jon Duckett의 예제 코드 통합본
+                        HTML and CSS: Design and Build Websites by Jon Duckett의 예제 코드 통합본(보류)
                     </a>
                 </li>
                 <li className={navLinkItem}>
-                    <a href="https://resisted-sunfish-1cf.notion.site/fb5067a26b514e6580519523e319a5f6" className={linkText}>
+                    <a href="https://www.notion.so/minjaegoogling/fb5067a26b514e6580519523e319a5f6?pvs=4" className={linkText}>
                         구글링 타임라인
-                    </a>
-                </li>
-                <li className={navLinkItem}>
-                    <a href="https://pedia.watcha.com/ko-KR/users/8nPvyQjmdDvYo" className={linkText}>
-                        왓챠피디아
                     </a>
                 </li>
             </ul>
