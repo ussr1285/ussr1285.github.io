@@ -20,6 +20,7 @@
     "axios": "^1.4.0",
     "firebase": "^9.15.0",
     "gatsby": "^5.4.0",
+    "gatsby-plugin-google-analytics": "^5.13.0",
     "gatsby-plugin-image": "^3.4.0",
     "gatsby-plugin-mdx": "^5.4.0",
     "gatsby-plugin-sharp": "^5.4.0",

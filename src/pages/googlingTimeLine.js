@@ -15,18 +15,29 @@ const GooglingTimeLine = () => {
                 setResponse(data)
             })
     }, [])
+
+    const styles = {
+        container: {
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "0 1rem",
+        },
+    }
     
     const makeNotionImbed = () => {
         return (
             Object.keys(response).length && (
-                <NotionRenderer blockMap={response} fullPage={true} />
+                // NotionRenderer 컴포넌트를 사용하여 렌더링을 하는데, 너무 길이가 길으니까 페이지 별로 나눠서 렌더링을 할 수 있도록 해줘. 
+                <NotionRenderer blockMap={response}/>
             )
         )
     }
     
     return (
         <Layout pageTitle="구글링 타임라인">
-            <div>
+            <div style={styles.container}>
                 {makeNotionImbed()}
             </div>
         </Layout>

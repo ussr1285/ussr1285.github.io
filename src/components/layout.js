@@ -27,7 +27,7 @@ const Layout = ({ pageTitle, children }) => {
             ["/about", "About"],
             ["https://github.com/ussr1285", "Github"],
             ["/guestbook", "Guestbook"],
-            ["/googlingTimeLine", "My Googling"],
+            ["https://minjaegoogling.notion.site/fb5067a26b514e6580519523e319a5f6?pvs=4", "My Googling"],
         ]
         let navs = []
         navLinkLists.map((navInfo) => {

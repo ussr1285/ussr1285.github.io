@@ -26,6 +26,14 @@ module.exports = {
           "gatsby-remark-responsive-iframe"
         ]
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "GTM-T2RJJWHT",
+        head: true,
+        anonymize: true,
+      }
+    },
   ]
 }
