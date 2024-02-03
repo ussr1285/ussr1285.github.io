@@ -4,10 +4,10 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { linkText, articleStyle } from '../components/layout.module.css'
 
-const Mogakko = ({ data }) => {
+const Mogakso = ({ data }) => {
   return (
     <main>
-      <Layout pageTitle="Mogakko">
+      <Layout pageTitle="Mogakso">
         <ul>
           {
             data.allMdx.nodes.map((node) => (
@@ -31,7 +31,7 @@ const Mogakko = ({ data }) => {
 export const query = graphql`
   query {
     allMdx(
-      filter: { frontmatter: { category: { eq: "모각코" } } }
+      filter: { frontmatter: { category: { eq: "모각소" } } }
       sort: { fields: [frontmatter___date, frontmatter___slug], order: [DESC, DESC] }
     ) {
       nodes {
@@ -49,6 +49,6 @@ export const query = graphql`
 `;
 
 
-export const Head = () => <Seo title="Mogakko" />
+export const Head = () => <Seo title="Mogakso" />
 
-export default Mogakko
+export default Mogakso
