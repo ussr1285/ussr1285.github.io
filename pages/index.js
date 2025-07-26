@@ -30,7 +30,6 @@ export default function Home() {
         <nav className="nav">
           <Link href="/home">home</Link>
           <Link href="/about">about</Link>
-          <Link href="/guestbook">guestbook</Link>
           <Link href="/mogakso">mogakso</Link>
         </nav>
         
