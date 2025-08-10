@@ -18,17 +18,25 @@ export default function Home({ posts }) {
         <div className="blog-list">
           {posts.map(post => (
             <article key={post.slug} className="blog-post">
-              <h2>
-                <Link href={`/blog/${post.slug}`}>
-                  {post.title}
-                </Link>
-              </h2>
-              <div className="date">
-                {format(new Date(post.date), 'yyyy.MM.dd')}
-              </div>
-              <div className="excerpt">
-                {post.excerpt}
-              </div>
+              <Link href={`/blog/${post.slug}`} className="blog-post-link">
+                <div className="post-content">
+                  <h2>{post.title}</h2>
+                  <div className="date">
+                    {format(new Date(post.date), 'yyyy.MM.dd')}
+                  </div>
+                  <div className="excerpt">
+                    {post.excerpt}
+                  </div>
+                </div>
+                {post.thumbnail && (
+                  <div className="thumbnail">
+                    <img 
+                      src={post.thumbnail} 
+                      alt={post.title}
+                    />
+                  </div>
+                )}
+              </Link>
             </article>
           ))}
         </div>
