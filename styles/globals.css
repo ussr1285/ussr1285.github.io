@@ -161,3 +161,15 @@ a {
 .back-link:hover {
   color: #333;
 }
+
+/* 모바일에서 줄바꿈 처리 */
+.mobile-break::before {
+  content: '';
+}
+
+@media (max-width: 768px) {
+  .mobile-break::before {
+    content: '\A';
+    white-space: pre;
+  }
+}
