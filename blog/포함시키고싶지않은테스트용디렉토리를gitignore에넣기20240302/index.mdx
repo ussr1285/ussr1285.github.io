@@ -1,0 +1,30 @@
+---
+title: "포함시키고 싶지 않은 테스트용 디렉토리를 gitignore에 넣기"
+date: "2024-03-02 23:45"
+slug: "put-the-directories-for-testing-that-you-dont-want-to-include-in-gitignore-2024-03-02"
+category: "IT"
+---
+
+뭔가 android 라는 폴더 안에 안드로이드 관련 인증키인 test.jks랑 관련 비밀번호들을 넣어서 관리하고싶다 가정해보자. 다른 곳에 인증서들을 두면 잊어버릴 것 같고, 편하게 쓰려고 그랬다고 쳐보자.
+근데 이거는 오픈소스 프로젝트(혹은 git으로 관리되는 레포지토리)고, jks는 인터넷에 공개되면 안된다.
+
+그냥 최상위 .gitignore에 추가하면 이렇게 추가하면 될 것이다.
+```
+android/test.jks
+```
+
+그러면 gitignore에 추가하면 되는데, 만약 유출되면 안되는 정보 같은 것이 계속 늘어날 수 있고, 한 폴더를 그냥 제외하는 것이 편할 것이다.
+```
+android/keystore
+```
+
+
+앗 근데 이것을 다른 이들과 공유할 필요가 없고, 팀원들이 .gitignore에 추가된 의문의 폴더에 대해 보게될 수도 있다. .gitignore에도 남기고 싶지 않은데 어떻게 해야할까 그러면?
+그러면 아예 android/keystore 에다가 .gitignore를 만들고 다음과 같이 적어주면 된다.
+```
+*
+```
+*은 Global, 전부 다.
+.gitignore는 .gitignore도 넣을 수 있어서, 그냥 이거는 git의 관리 대상에서 제외되어서 더 이상 staging 되지 않는다.
+이러면 팀원들에게 내 사적인(?) 인증파일 등을 보일 필요도 없고, 온 세상의 해커들에게 내 인증파일을 보여줄 일도 없을 것이다.
+
