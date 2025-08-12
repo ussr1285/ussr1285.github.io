@@ -15,17 +15,36 @@ const TenorEmbed = dynamic(() => import("../components/TenorEmbed"), {
 
 export default function Home() {
   const router = useRouter();
+  const [audioPlayed, setAudioPlayed] = useState(false);
 
   useEffect(() => {
-    const handleKeyPress = (event) => {
-      if (event.key === "Enter") {
-        router.push("/home");
+    const playAudio = () => {
+      if (!audioPlayed) {
+        const audio = new Audio("/mikudayo_notification.mp3");
+        audio.play().catch((e) => console.log("Audio play failed:", e));
+        setAudioPlayed(true);
+        document.removeEventListener("click", playAudio);
+        document.removeEventListener("keydown", playAudio);
       }
     };
 
+    const handleKeyPress = (event) => {
+      if (event.key === "Enter") {
+        router.push("/blog");
+      }
+    };
+
+    // 사용자 상호작용 시 오디오 재생
+    document.addEventListener("click", playAudio);
+    document.addEventListener("keydown", playAudio);
     window.addEventListener("keydown", handleKeyPress);
-    return () => window.removeEventListener("keydown", handleKeyPress);
-  }, [router]);
+
+    return () => {
+      document.removeEventListener("click", playAudio);
+      document.removeEventListener("keydown", playAudio);
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [router, audioPlayed]);
 
   return (
     <>
@@ -39,7 +58,7 @@ export default function Home() {
         <h1>Welcome!<span className="mobile-break"> </span>jmj blog</h1>
 
         <nav className="nav">
-          <Link href="/home">home</Link>
+          <Link href="/blog">blog</Link>
           <Link href="/about">about</Link>
           <Link href="/mogakso">mogakso</Link>
         </nav>

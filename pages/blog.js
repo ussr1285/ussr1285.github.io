@@ -3,11 +3,11 @@ import Head from 'next/head'
 import { getAllPosts } from '../lib/posts'
 import { format } from 'date-fns'
 
-export default function Home({ posts }) {
+export default function Blog({ posts }) {
   return (
     <>
       <Head>
-        <title>Home - 블로그</title>
+        <title>Blog - 블로그</title>
       </Head>
       
       <div className="container">
@@ -46,11 +46,16 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = getAllPosts()
+  const allPosts = getAllPosts()
+  
+  // 모각소 관련 글 제외하고 필터링
+  const blogPosts = allPosts.filter(post => 
+    !post.title.includes('모각소') && !post.slug.includes('모각소')
+  )
   
   return {
     props: {
-      posts
+      posts: blogPosts
     }
   }
 }

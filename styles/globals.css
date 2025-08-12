@@ -130,11 +130,13 @@ a {
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem;
+  line-height: 1.8;
 }
 
 .blog-content h1 {
   margin-bottom: 1rem;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .blog-content .meta {
@@ -149,6 +151,68 @@ a {
   height: auto;
   margin: 2rem 0;
   border-radius: 4px;
+}
+
+/* 마크다운 텍스트 줄바꿈 및 간격 개선 */
+.blog-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.blog-content h1:first-child,
+.blog-content h2:first-child,
+.blog-content h3:first-child {
+  margin-top: 0;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #666;
+  font-style: italic;
+}
+
+.blog-content pre {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.blog-content code {
+  background: #f0f0f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.blog-content pre code {
+  background: none;
+  padding: 0;
 }
 
 .back-link {

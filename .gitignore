@@ -84,4 +84,4 @@ out/
 
 # Gatsby build artifacts
 .cache/
-public/
+public/blog
